@@ -1,0 +1,1 @@
+cl testimemorystream.cpp /EHsc /Zi
