@@ -60,7 +60,7 @@ private:
       off = -1;
       break;
     }
-    if (0 <= off && off < (_end - _begin))
+    if (0 <= off && off <= (_end - _begin))
     {
       _current = _begin + off;
     }
