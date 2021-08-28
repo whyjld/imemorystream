@@ -87,7 +87,11 @@ class imemorystream : public std::istream
 public:
   imemorystream(const char* buffer, size_t length)
    : std::istream(new memoryreadbuf(buffer, length))
+   , _buffer(buffer), _length(length)
   {
 
   }
+protected:
+  const char* _buffer;
+  size_t _length;
 };
